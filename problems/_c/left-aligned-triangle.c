@@ -10,7 +10,7 @@ int main(void)
     {
         // height of pyramid
         n = get_int("Height of pyramid? ");
-    } while (n < 1);
+    } while (n < 1 || n>8);
 
     // print cols and rows
     for (int col = 0; col < n; col++)

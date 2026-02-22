@@ -1,6 +1,0 @@
-make hello  # complie
-./hello  # excute
-
-or -------------------
-
-gcc -o hello hello.c -lcs50
