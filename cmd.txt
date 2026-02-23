@@ -1,0 +1,17 @@
+# basic commands
+make hello  # complie program hello
+./hello  # excute program hello
+
+    # alternatively
+    gcc -o hello hello.c -lcs50
+
+
+# init conda for zsh
+~/miniconda3/bin/conda init zsh && source ~/.zshrc
+
+# edit jypyter kernels config file
+nano ~/.local/share/jupyter/kernels/c/kernel.json
+
+# verify kernels exist
+jupyter kernelspec list
+
