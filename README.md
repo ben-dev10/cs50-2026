@@ -13,3 +13,5 @@ To run the Jupyter notebooks:
     - the standard pip py kernel
     - xeus-cling for C++
     - jupyter-c-kernel for C
+
+ 
