@@ -1,3 +1,14 @@
 {
-    "vscodeTodo.enableWideView": true
+    "vscodeTodo.enableWideView": true,
+    "cSpell.words": [
+        "fcpen",
+        "fopen",
+        "fprintf",
+        "fread",
+        "fscanf",
+        "fseek",
+        "fwrite",
+        "malloc",
+        "phonebook"
+    ]
 }
