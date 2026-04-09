@@ -1,6 +1,8 @@
 {
     "vscodeTodo.enableWideView": true,
     "cSpell.words": [
+        "cowsay",
+        "elif",
         "fcpen",
         "fopen",
         "fprintf",
@@ -8,7 +10,12 @@
         "fscanf",
         "fseek",
         "fwrite",
+        "infact",
         "malloc",
-        "phonebook"
+        "phonebook",
+        "pyttsx",
+        "qrcode",
+        "strcmp",
+        "tolower"
     ]
 }
