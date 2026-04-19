@@ -1,0 +1,146 @@
+<!-- hello.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <script>
+      function greet() {
+         let name = document.querySelector('#name').value;
+         alert('Hello, ' + name);
+      }
+
+      function blink() {
+         let body = document.querySelector('body');
+
+         if (body.style.visibility == 'hidden') {
+            body.style.visibility = 'visible';
+         } else {
+            body.style.visibility = 'hidden';
+         }
+      }
+
+      // window.setInterval(blink, 500)  
+
+   </script>
+</head>
+
+<body>
+   <p>Hello files</p>
+
+   <h2>Table</h2>
+   <table>
+      <thead>
+         <tr>
+            <th scope="col">Timestamp</th>
+            <th scope="col">Language</th>
+            <th scope="col">Problem</th>
+         </tr>
+
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+         </tr>
+         <tr>
+            <td>*</td>
+            <td>0</td>
+            <td>#</td>
+         </tr>
+      </tbody>
+
+   </table>
+
+   <h2>Images</h2>
+
+
+   <h2>Videos</h2>
+   <video src="" muted style="border: 1px solid gray;">
+      <source src="video.mp4">
+   </video>
+
+   <a href="https://www.google.com">Google</a>
+
+   <h2>Search box</h2>
+   <form action="https://www.google.com/search" method="get">
+      <input type="search" placeholder="Search Google" name="q" autofocus id="query" autocomplete="off">
+      <input type="submit" value="Google Search">
+   </form>
+
+   <h2>Register</h2>
+
+   <form action="" onsubmit="event.preventDefault(); alert('Submitted');">
+      <input placeholder="Email with regex" pattern=".+@.+\.edu" type="text">
+      <input placeholder="With type email" type="email">
+      <input type="submit" value="Send">
+   </form>
+
+   <h3>Javascript</h3>
+   <form id="form" action="" onsubmit="greet(); return false;">
+      <input placeholder="Send" type="text" id="name">
+      <input type="submit" value="Send">
+   </form>
+   <script>
+      document.querySelector('#form').addEventListener('submit', function (event) {
+         alert('hello, ' + document.querySelector('#name').value);
+         event.preventDefault();
+      })
+   </script>
+
+   <h4>Background Changer </h4>
+   <button onclick="document.querySelector('body').style.backgroundColor = 'red'">R</button>
+   <button onclick="document.querySelector('body').style.backgroundColor = 'green'">G</button>
+   <button onclick="document.querySelector('body').style.backgroundColor = 'blue'">B</button>
+
+   <!-- bli -->
+   <h3>Auto-complete</h3>
+   <input id="words" type="text">
+   <ul id="result"></ul>
+   <script>
+      let WORDS = ["alien", "hero", "fighter", "mercy", "europe", "harvard", "movies", "games", "john", "michael", "bread", "climb", "category", "clue", "cats", "catalina", "cairo", "canary", "clamp", "dogs", "mouse"];
+
+      let input = document.querySelector("#words");
+
+      input.addEventListener('keyup', function (event) {
+         let result = '';
+         if (input.value) {
+            for (word of WORDS) {
+               if (word.startsWith(input.value)) {
+                  result += `<li>${word}</li>`
+               }
+            }
+         }
+
+         document.querySelector("#result").innerHTML = result;
+      })
+
+   </script>
+
+   <h3>Location</h3>
+
+   <p id="" location></p>
+   <script>
+      navigator.geolocation.getCurrentPosition(function (position) {
+         document.querySelector("#location").innerHTML = position.coords.latitude + ', ' + position.coords.longitude;
+      })
+   </script>
+
+</body>
+
+</html>

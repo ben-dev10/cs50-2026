@@ -2,14 +2,18 @@
     "vscodeTodo.enableWideView": true,
     "cSpell.words": [
         "cowsay",
+        "Datagram",
         "elif",
+        "favourites",
         "fcpen",
+        "Fiftyville",
         "fopen",
         "fprintf",
         "fread",
         "fscanf",
         "fseek",
         "fwrite",
+        "herarchical",
         "infact",
         "malloc",
         "phonebook",
@@ -17,5 +21,6 @@
         "qrcode",
         "strcmp",
         "tolower"
-    ]
+    ],
+    "sqltools.useNodeRuntime": true
 }
