@@ -10,6 +10,7 @@
         "fopen",
         "fprintf",
         "fread",
+        "Froshims",
         "fscanf",
         "fseek",
         "fwrite",
@@ -20,7 +21,8 @@
         "pyttsx",
         "qrcode",
         "strcmp",
-        "tolower"
+        "tolower",
+        "venv"
     ],
     "sqltools.useNodeRuntime": true
 }

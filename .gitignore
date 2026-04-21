@@ -2,3 +2,4 @@
 .devtool*
 
 .venv
+.archive

@@ -34,6 +34,31 @@
             },
             "isBackground": true,
             "problemMatcher":[],
+        },
+        {
+            "label": "Run Flask (Current Folder)",
+            "type": "shell",
+            "command":"flask run --reload",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher":[]
+        },{
+            "label": "Run Flask (Pick Folder)",
+            "type": "shell",
+            "command":"flask run --reload",
+            "options": {
+                "cwd": "${workspaceFolder}/${input:flaskFolder}"
+            },
+            "problemMatcher":[]
+        },
+    ],
+    "inputs": [
+        {
+            "id": "flaskFolder",
+            "type": "promptString",
+            "description": "Enter folder path",
+            "default": "lectures/week-9/"
         }
     ],
     "version": "2.0.0"
